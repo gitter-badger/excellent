@@ -4,6 +4,7 @@
   "description": "DOM-Manipulation Framework",
   "main": "src/index.js",
   "scripts": {
+    "test": "jest",
     "lint": "./node_modules/.bin/eslint ./src",
     "build": "./node_modules/.bin/uglifyjs ./src/index.js -o ./excellent.min.js"
   },
@@ -30,6 +31,9 @@
   },
   "devDependencies": {
     "eslint": "5.2.0",
+    "eslint-plugin-jest": "^21.18.0",
+    "jest": "23.4.1",
+    "jsdom": "^11.11.0",
     "uglify-js": "3.4.5"
   }
 }

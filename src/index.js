@@ -77,6 +77,10 @@
 
     window.excellent = root;
 
+    if (typeof module === 'object' && module && typeof module.exports === 'object') {
+        module.exports = root; // Inside Node.js
+    }
+
     document.addEventListener('DOMContentLoaded', function () {
         initServices();
         initModules();
